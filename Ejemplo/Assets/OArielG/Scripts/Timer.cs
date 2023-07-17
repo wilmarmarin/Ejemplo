@@ -5,11 +5,15 @@ using UnityEngine;
 
 public class Timer: MonoBehaviour
 {
-    [SerializeField] TextMeshProUGUI texto;
-    [SerializeField] private float tiempo;
-    Animator animator;
+    TextMeshProUGUI texto;
+    private float tiempo;
 
     private int tiempoM, tiempoS;
+    private void Start()
+    {
+        tiempo = 0;
+        texto = GetComponent<TextMeshProUGUI>();
+    }
     void Cronometro()
     {
         tiempo += Time.deltaTime;
