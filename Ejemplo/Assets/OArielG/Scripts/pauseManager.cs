@@ -17,4 +17,8 @@ public class pauseManager: MonoBehaviour
         gameObject.transform.GetChild(0).gameObject.SetActive(false);
         gameObject.transform.GetChild(1).gameObject.SetActive(true);
     }
+    private void Start()
+    {
+        modePlay();
+    }
 }

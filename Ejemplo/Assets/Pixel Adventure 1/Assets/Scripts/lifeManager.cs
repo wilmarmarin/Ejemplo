@@ -8,6 +8,10 @@ using UnityEngine.UI;
 public class lifeManager : MonoBehaviour
 {
     public static int lifes = 4;
+    void Start()
+    {
+        lifes = 4;   
+    }
     void Update()
     {
         if (lifes >= 3)

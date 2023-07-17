@@ -10,7 +10,7 @@ public class PanelManager : MonoBehaviour
     public int panelSelect;
     public void changePanel()
     {
-        PanelManager.panel = panelSelect;
+        panel = panelSelect;
     }
     public void LoadController()
     {
@@ -38,6 +38,8 @@ public class PanelManager : MonoBehaviour
         {
             comAudio = false;
         }
+        panel = 1;
+        LoadController();
     }
     void Update()
     {
