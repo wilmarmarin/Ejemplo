@@ -8,6 +8,7 @@ public class Weak : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
+            collision.gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2 (collision.gameObject.GetComponent<Rigidbody2D>().velocity.x, 20);
             Destroy(gameObject);
         }
     }
